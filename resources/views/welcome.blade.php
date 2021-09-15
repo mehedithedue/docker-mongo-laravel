@@ -60,7 +60,7 @@
                 <div class="title m-b-md">
                     Optima Analytics Technical Test
                 </div>
-                <a href="/products">Go to Product Page</a>
+                <a href="/products"><h2>Go to Product Page</h2></a>
             </div>
         </div>
     </body>
