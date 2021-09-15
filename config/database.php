@@ -93,7 +93,7 @@ return [
         ],
         'mongodb' => [
             'driver' => 'mongodb',
-            'dsn' => 'mongodb+srv://'.env('DB_USERNAME').':'.env('DB_PASSWORD').'@'.env('DB_HOST').'/'.env('DB_DATABASE').'?retryWrites=true&w=majority',
+            'dsn' => env('MONGO_DSN'),
             'database' => env('DB_DATABASE'),
         ],
 

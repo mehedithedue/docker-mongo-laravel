@@ -5,7 +5,7 @@
     <div class="col-12">
         <div class="card">
             <div class="card-body">
-                <h2>Optimal Analytics Product List</h2>
+                <h2>Optimal Analytics Item List</h2>
             </div>
         </div>
     </div>
@@ -16,29 +16,29 @@
             <div class="card-header">
                 <div class="row">
                     <div class="col-md-12">
-                        <h4 class="card-title">All Products </h4>
+                        <h4 class="card-title">All Items </h4>
                     </div>
                 </div>
             </div>
             <div class="card-body">
-                <table id="product" class="table table-striped  table-hover" cellspacing="0">
+                <table id="item" class="table table-striped  table-hover" cellspacing="0">
                     <thead class="table-dark">
                         <tr>
                             <th>ID</th>
-                            <th>Product Name</th>
+                            <th>Item Name</th>
                             <th>Amount</th>
                             <th>Unit</th>
                             <th>Date</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach($products as $product)
+                        @foreach($items as $item)
                         <tr>
                             <td>{{ $loop->index + 1 }}</td>
-                            <td>{!! $product->product !!}</td>
-                            <td>{{ $product->amount }}</td>
-                            <td>{{ $product->unit }}</td>
-                            <td>{{ $product->created_at }}</td>
+                            <td>{!! $item->item !!}</td>
+                            <td>{{ $item->amount }}</td>
+                            <td>{{ $item->unit }}</td>
+                            <td>{{ $item->created_at }}</td>
                         </tr>
                         @endforeach
                     </tbody>
@@ -51,7 +51,7 @@
     @section('script')
     <script>
         $(document).ready(function() {
-            $('#product').DataTable();
+            $('#item').DataTable();
         });
     </script>
     @endsection

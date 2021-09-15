@@ -15,4 +15,4 @@ docker-compose exec app composer install
 ```
 # Run project
 
-5. Go to ```http://localhost:8080/products``` in browser.
+5. Go to ```http://localhost:8080/items``` in browser.
